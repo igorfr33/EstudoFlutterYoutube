@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:youtube/Api.dart';
+import 'package:youtube/Apis/InicioApi.dart';
 import 'package:flutter_youtube/flutter_youtube.dart';
 import 'package:youtube/models/Video.dart';
 
@@ -7,7 +7,7 @@ class Inicio extends StatefulWidget {
 
   String pesquisa;
 
-  Inicio( this.pesquisa );
+  Inicio(this.pesquisa );
 
   @override
   _InicioState createState() => _InicioState();
@@ -17,7 +17,7 @@ class _InicioState extends State<Inicio> {
 
   _listarVideos(String pesquisa){
 
-    Api api = Api();
+    ApiPesquisa api = ApiPesquisa();
     return api.pesquisar( pesquisa );
 
   }

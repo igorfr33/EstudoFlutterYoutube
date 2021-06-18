@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
     List<Widget> telas = [
       Inicio( _resultado ),
       EmAlta(),
-      Inscricao(),
+      Inscricao(_resultado),
       Biblioteca()
     ];
 
