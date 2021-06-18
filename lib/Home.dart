@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
         ),
         backgroundColor: Colors.white,
         title: Image.asset(
-            "imagens/youtube.png",
+            "images/youtube.png",
           width: 98,
           height: 22,
         ),
